@@ -1,11 +1,13 @@
 import React from 'react';
 
 // components
-import Navbar_xx from './components/Navbar_xx';
-import CartContainer_xx from './components/CartContainer_xx';
+import Navbar_80 from './components/Navbar_80';
+import CartContainer_80 from './components/CartContainer_80';
 // items
+import { useGlobalContext_80 } from './Context_80';
 
 const App_xx = () => {
+  const {loading, cart} = useGlobalContext_80();
   // if (loading) {
   //   return (
   //     <div className='loading'>
@@ -15,8 +17,8 @@ const App_xx = () => {
   // }
   return (
     <main>
-      <Navbar_xx />
-      <CartContainer_xx />
+      <Navbar_80 />
+      <CartContainer_80 />
     </main>
   );
 };

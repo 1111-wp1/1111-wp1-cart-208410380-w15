@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CartItem from './CartItem_xx';
+import CartItem from './CartItem_80';
 import data from '../data';
 
 const CartContainer = () => {
